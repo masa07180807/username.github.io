@@ -1,0 +1,112 @@
+/* 全体のスタイル */
+body {
+    font-family: 'Noto Serif JP', serif; /* 和風フォント */
+    margin: 0;
+    padding: 0;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: #f5f5f5;
+    color: #4a4a4a;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border-bottom: 2px solid #d1b68c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #6d6d6d;
+    font-family: 'Noto Serif JP', serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #6d6d6d;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    font-family: 'Noto Serif JP', serif;
+}
+
+nav ul li a:hover {
+    color: #b58900; /* 金色のアクセント */
+}
+
+/* セクションスタイル */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明の白背景 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #4a4a4a;
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* プロジェクトスタイル */
+.project {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #4a4a4a;
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* フッタースタイル */
+footer {
+    background-color: #f5f5f5;
+    color: #6d6d6d;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #d1b68c;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* モバイル対応 */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+}
